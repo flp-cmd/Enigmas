@@ -6,20 +6,28 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "populate-db": "ts-node -P tsconfig.scripts.json scripts/populateEnigmasDatabase.ts"
   },
   "dependencies": {
+    "@chakra-ui/react": "^3.16.1",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "axios": "^1.8.4",
+    "firebase-admin": "^13.2.0",
+    "framer-motion": "^12.7.4",
+    "next": "15.3.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.3.1"
+    "ts-node": "^10.9.2"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@eslint/eslintrc": "^3",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.3.1",
-    "@eslint/eslintrc": "^3"
+    "typescript": "^5"
   }
 }
